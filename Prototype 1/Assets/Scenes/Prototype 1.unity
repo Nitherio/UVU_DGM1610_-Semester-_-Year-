@@ -1055,6 +1055,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1120,13 +1121,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.043612402, y: -0.017937161, z: 0.00078314764, w: 0.9988872}
-  m_LocalPosition: {x: 0.5, y: 2, z: -14.7}
+  m_LocalRotation: {x: 0.0896563, y: -0.017954195, z: -0.00004533586, w: 0.995811}
+  m_LocalPosition: {x: 0.08, y: 6.64, z: -16.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 5, y: -2.058, z: 0}
+  m_LocalEulerAnglesHint: {x: 10.286, y: -2.0830002, z: -0.193}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2d1d54858886004aa219e7c45afd6ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1829272971}
 --- !u!1001 &578002886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3596,6 +3610,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.999991, y: 0, z: 20.000004}
   m_Center: {x: -2.4999802, y: 0, z: -0.000000029802322}
+--- !u!1 &1829272971 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1835137392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1829272976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829272971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7449d1ad188a1ba448e475c53d8ca70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  hInput: 0
+  fInput: 0
 --- !u!1001 &1835137392
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3605,7 +3640,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_Name
-      value: Veh_Car_Blue_Z
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_RootOrder
