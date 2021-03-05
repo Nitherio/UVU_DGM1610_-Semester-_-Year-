@@ -89,7 +89,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8378385720354196847}
   - component: {fileID: 8378385720354378985}
-  - component: {fileID: 8378385720354378991}
   - component: {fileID: 8378385720354378990}
   m_Layer: 0
   m_Name: Prop_Barrier01Prefab
@@ -126,18 +125,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.7834988, z: 1}
   m_Center: {x: 0, y: 0.8723359, z: 0}
---- !u!114 &8378385720354378991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8378385720354492751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 045b5a6a1e64ce84b899381998069669, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8378385720354378990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,4 +137,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d60e8ee4e0b87d54b8270a846a69dca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 25
