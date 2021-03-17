@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8378385720354196847}
   - component: {fileID: 8378385720354378985}
-  - component: {fileID: 8378385720354378990}
+  - component: {fileID: 5675388436302043483}
   m_Layer: 0
   m_Name: Prop_Barrier01Prefab
   m_TagString: Obstacle
@@ -125,7 +125,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.7834988, z: 1}
   m_Center: {x: 0, y: 0.8723359, z: 0}
---- !u!114 &8378385720354378990
+--- !u!114 &5675388436302043483
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

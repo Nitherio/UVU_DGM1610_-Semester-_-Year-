@@ -10,14 +10,14 @@ public class SpawnManager : MonoBehaviour
 
     public float repeatRate = 2f;
 
-    private Vector3 spawnPos = new Vector3(25,0,0);
+    private Vector3 spawnPos = new Vector3(25, 0, 0);
 
     private PlayerMovement playerMovementScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnObstacle",startDelay,repeatRate);
+        InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
         playerMovementScript = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
 
