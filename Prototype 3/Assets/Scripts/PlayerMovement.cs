@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody playerRb;
 
-    public float jumpforce = 12;
+    public float jumpforce = 15;
 
     public float gravityMod = 2;
 
