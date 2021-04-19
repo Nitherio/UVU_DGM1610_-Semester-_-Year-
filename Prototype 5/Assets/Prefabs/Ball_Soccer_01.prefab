@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 864770021341088664}
   - component: {fileID: 8381090065974928641}
   - component: {fileID: 7136997691565352344}
+  - component: {fileID: 4603608181615524747}
   m_Layer: 0
   m_Name: Ball_Soccer_01
   m_TagString: Untagged
@@ -93,6 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56efa42c035ab9c44b0b798c4802017c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointValue: 5
+  explosionParticle: {fileID: 4758139293545943008, guid: c7ad2532a6eeb40b59033c75e71fa054,
+    type: 3}
 --- !u!54 &7136997691565352344
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -109,3 +113,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &4603608181615524747
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887650096291619952}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.30960658, y: 0.29509434, z: 0.30383658}
+  m_Center: {x: 0, y: 0.14754717, z: 0}

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4897507831814108730}
   - component: {fileID: 1914774458071407161}
   - component: {fileID: 6049177006860197920}
+  - component: {fileID: -9036433079985760573}
   m_Layer: 0
   m_Name: Ball_Beachball
   m_TagString: Untagged
@@ -93,6 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56efa42c035ab9c44b0b798c4802017c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointValue: 10
+  explosionParticle: {fileID: 15085447402717889, guid: 743ce290c74ae49c19aa3f128322fc7e,
+    type: 3}
 --- !u!54 &6049177006860197920
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -109,3 +113,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &-9036433079985760573
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872983669589095098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
