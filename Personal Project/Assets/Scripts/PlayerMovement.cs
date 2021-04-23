@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private float xRange = 17;
 
     public GameObject projectilePrefab;
+
+    public bool noShadowFox;
 
     // Start is called before the first frame update
     void Start()

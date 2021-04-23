@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-
     private void OnTriggerEnter(Collider other)
     {
-        // Destory this object that a script is attached to
+        //Destory this object that a script is attached to
         Destroy(gameObject);
-        // Destory other object that hits a trigger
+        //Destory other object that hits a trigger
         Destroy(other.gameObject);
     }
-
-
 }

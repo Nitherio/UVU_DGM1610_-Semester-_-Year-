@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 5578989363778404288}
   - component: {fileID: -4029731879810675846}
   m_Layer: 0
-  m_Name: ShadowPlayer
-  m_TagString: Prefab
+  m_Name: ShadowFox
+  m_TagString: ShadowFox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
