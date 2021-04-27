@@ -9,11 +9,9 @@ public class PlayerMovement : MonoBehaviour
 
     public float hInput;
 
-    private float xRange = 17;
+    private float xRange = 10;
 
     public GameObject projectilePrefab;
-
-    public bool noShadowFox;
 
     // Start is called before the first frame update
     void Start()

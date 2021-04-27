@@ -11,8 +11,11 @@ public class GameOver : MonoBehaviour
 
     public TextMeshProUGUI gameOverText;
 
-
     public GameObject blackout;
+
+    public GameObject spawnManager;
+
+    public Button resetButton;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +37,14 @@ public class GameOver : MonoBehaviour
             Debug.Log("GameOver!!");
             gameOverText.gameObject.SetActive(true);
             blackout.gameObject.SetActive(true);
+            spawnManager.gameObject.SetActive(false);
+            resetButton.gameObject.SetActive(true);
         }
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }

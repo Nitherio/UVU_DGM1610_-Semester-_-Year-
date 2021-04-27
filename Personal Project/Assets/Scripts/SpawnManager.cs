@@ -6,9 +6,9 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] wispPrefabs;
 
-    private float SpawnRangeX = 17;
+    private float SpawnRangeX = 11;
 
-    private float SpawnPosZ = 17;
+    private float SpawnPosZ = 11;
 
     private float startDelay = 2;
 
