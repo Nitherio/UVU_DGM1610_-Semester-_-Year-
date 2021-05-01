@@ -1,50 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    public bool isGameActive = true;
+    public bool isGameActive;
 
     public TextMeshProUGUI gameOverText;
-
-    public GameObject blackout;
 
     public GameObject spawnManager;
 
     public Button resetButton;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    public GameObject player;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void OnCollisionEnter(Collision collision)
+    //Colliding with a wall blocks game from view and bring restart button out
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
-            isGameActive = false;
             Debug.Log("GameOver!!");
+            Destroy(player);
             gameOverText.gameObject.SetActive(true);
-            blackout.gameObject.SetActive(true);
-            spawnManager.gameObject.SetActive(false);
             resetButton.gameObject.SetActive(true);
+            spawnManager.gameObject.SetActive(false);
+            isGameActive = false;
+                      
         }
     }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
 }

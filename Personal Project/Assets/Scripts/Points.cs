@@ -14,6 +14,7 @@ public class Points : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
+    //Updates score
     void OnTriggerEnter(Collider other)
     {
         gameManager.UpdateScore(pointValue);

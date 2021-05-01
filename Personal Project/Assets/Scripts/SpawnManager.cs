@@ -20,12 +20,6 @@ public class SpawnManager : MonoBehaviour
         InvokeRepeating("SpawnRandomWisps", startDelay, spawnInterval);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
     void SpawnRandomWisps()
     {
         //Randomly generate wisp spawn position

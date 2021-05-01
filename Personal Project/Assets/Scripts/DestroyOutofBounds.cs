@@ -9,6 +9,7 @@ public class DestroyOutofBounds : MonoBehaviour
     public float lowerBound = -35;
 
     // Update is called once per frame
+    //Destroy moving objects out of bounds
     void Update()
     {
         if (transform.position.z > topBound)
